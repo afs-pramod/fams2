@@ -1,0 +1,969 @@
+2019-10-06 12:33:35.231 DEBUG 8220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@29209504
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-6)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/AFS/Downloads/fixed-assets-management%20(1)/fixed-assets-management/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.afs.fams.entity.AllocationFlagEntity
+		com.afs.fams.entity.AssetCategoryEntity
+		com.afs.fams.entity.AssetsEntity]
+	Mapping files names []
+	Properties []
+2019-10-06 12:33:35.232 DEBUG 8220 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-10-06 12:33:35.232 DEBUG 8220 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-10-06 12:33:35.232 DEBUG 8220 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-10-06 12:33:35.233 DEBUG 8220 --- [restartedMain] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@5579b446
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@5579b446
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5579b446
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@66e060fa
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@16f89e9
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@3db6b945
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@2575e131
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@2575e131
+2019-10-06 12:33:35.234 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2575e131
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@4077b2d5
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@4077b2d5
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4077b2d5
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3d2a4bf3
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3d2a4bf3
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3d2a4bf3
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@35deb182
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@35deb182
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@35deb182
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@3f28a261
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@3f28a261
+2019-10-06 12:33:35.235 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@3f28a261
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@42b44e4b
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@42b44e4b
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@42b44e4b
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@2d2ef03d
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@2d2ef03d
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@2d2ef03d
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6dbc06bb
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6dbc06bb
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@177d8ac7
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@177d8ac7
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@77db5875
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@77db5875
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2d2ee1ab
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@20aab36b
+2019-10-06 12:33:35.236 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@5b7a2e0b
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@5b7a2e0b
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@76cfdde1
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@76cfdde1
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@2cb6492a
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2cb6492a
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@59f2963c
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@59f2963c
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@53f2e17f
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@53f2e17f
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@5bda1e35
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@5bda1e35
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@45bbf37d
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@45bbf37d
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@835de80
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@835de80
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4c083fe0
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4c083fe0
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@47a8bbe2
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@47a8bbe2
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@5d928871
+2019-10-06 12:33:35.237 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5d928871
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@7bf59c9d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7bf59c9d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7bf59c9d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@768f4b3c
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@74fa99a4
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@74fa99a4
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@74fa99a4
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3de2464a
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@6aa4341f
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6aa4341f
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@667e54dc
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@667e54dc
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@46e9c60e
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@46e9c60e
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@6996088f
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6996088f
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2259dd6e
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2259dd6e
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@3695b54d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@3e44dc27
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@3e44dc27
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@3e44dc27
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@67cf7910
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@67cf7910
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@67cf7910
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@b916a2a
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@103599c8
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@888da0d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@888da0d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@888da0d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@149325f5
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@149325f5
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@149325f5
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@1453dd77
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@2814fdec
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@66020251
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@66020251
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6b332fe9
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@6101ff9d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6101ff9d
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@6ef585cc
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6ef585cc
+2019-10-06 12:33:35.238 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@181302c9
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6aad2a45
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@4bedd9a
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@4627e324
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4627e324
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6254094d
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@e178f1c
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1a18e786
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@804dc1e
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@4a58b232
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7805ab0a
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@257c475b
+2019-10-06 12:33:35.239 DEBUG 8220 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@b369bc6
+2019-10-06 12:33:35.240 DEBUG 8220 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4f071b0] into BootstrapContext; was [null]
+2019-10-06 12:33:35.240 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4f071b0) [was null]
+2019-10-06 12:33:35.240 DEBUG 8220 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@5178d7df] into BootstrapContext; was [null]
+2019-10-06 12:33:35.240 DEBUG 8220 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@16791434] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@292e4596]
+2019-10-06 12:33:35.245 DEBUG 8220 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4f071b0]
+2019-10-06 12:33:35.246 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@4f071b0]
+2019-10-06 12:33:35.246 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-10-06 12:33:35.246 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-10-06 12:33:35.246 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-10-06 12:33:35.246 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-10-06 12:33:35.246 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-10-06 12:33:35.246 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : MySQL
+    version : 8.0.17
+      major : 8
+      minor : 0
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.17 (Revision: 16a712ddb3f826a1933ab42b0039f7fb9eebc6ec)
+      major : 8
+      minor : 0
+2019-10-06 12:33:35.247 DEBUG 8220 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.2
+2019-10-06 12:33:35.247  INFO 8220 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-06 12:33:35.248 DEBUG 8220 --- [restartedMain] o.h.e.j.env.spi.IdentifierHelperBuilder  : JDBC driver metadata reported database stores quoted identifiers in more than one case
+2019-10-06 12:33:35.248 DEBUG 8220 --- [restartedMain] o.h.e.j.env.spi.IdentifierHelperBuilder  : IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2019-10-06 12:33:35.249 DEBUG 8220 --- [restartedMain] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-10-06 12:33:35.249 DEBUG 8220 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@280a830c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2698c749]
+2019-10-06 12:33:35.250 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.afs.fams.entity.AllocationFlagEntity
+2019-10-06 12:33:35.250 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-10-06 12:33:35.250 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name AllocationFlagEntity
+2019-10-06 12:33:35.250 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity com.afs.fams.entity.AllocationFlagEntity on table AllocationFlagEntity
+2019-10-06 12:33:35.251 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AllocationFlagEntity), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.251 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2019-10-06 12:33:35.251 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AllocationFlagEntity:id]
+2019-10-06 12:33:35.251 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2019-10-06 12:33:35.251 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2019-10-06 12:33:35.251 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AllocationFlagEntity), mappingColumn=alloflag, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property alloflag with lazy=false
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AllocationFlagEntity:alloflag]
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for alloflag
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property alloflag
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AllocationFlagEntity), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property status with lazy=false
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AllocationFlagEntity:status]
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for status
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property status
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.afs.fams.entity.AssetCategoryEntity
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name AssetCategoryEntity
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity com.afs.fams.entity.AssetCategoryEntity on table AssetCategoryEntity
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetCategoryEntity), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetCategoryEntity:id]
+2019-10-06 12:33:35.252 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetCategoryEntity), mappingColumn=category, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property category with lazy=false
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetCategoryEntity:category]
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for category
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property category
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetCategoryEntity), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property status with lazy=false
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetCategoryEntity:status]
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for status
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property status
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.afs.fams.entity.AssetsEntity
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name AssetsEntity
+2019-10-06 12:33:35.253 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity com.afs.fams.entity.AssetsEntity on table AssetsEntity
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:id]
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=amortisationStartDate, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property amortisationStartDate with lazy=false
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:amortisationStartDate]
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for amortisationStartDate
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property amortisationStartDate
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=assetCurrrentStage, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property assetCurrrentStage with lazy=false
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:assetCurrrentStage]
+2019-10-06 12:33:35.254 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for assetCurrrentStage
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property assetCurrrentStage
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=assetReadyToUse, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property assetReadyToUse with lazy=false
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:assetReadyToUse]
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for assetReadyToUse
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property assetReadyToUse
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=barCodeImage, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property barCodeImage with lazy=false
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:barCodeImage]
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for barCodeImage
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property barCodeImage
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=billOfEntryDate, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property billOfEntryDate with lazy=false
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:billOfEntryDate]
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for billOfEntryDate
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property billOfEntryDate
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=billOfEntryNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property billOfEntryNo with lazy=false
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:billOfEntryNo]
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for billOfEntryNo
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property billOfEntryNo
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=branchId, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property branchId with lazy=false
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:branchId]
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for branchId
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property branchId
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=broadHead, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property broadHead with lazy=false
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:broadHead]
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for broadHead
+2019-10-06 12:33:35.255 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property broadHead
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=category, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property category with lazy=false
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:category]
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for category
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property category
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=childAssetDesc, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property childAssetDesc with lazy=false
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:childAssetDesc]
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for childAssetDesc
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property childAssetDesc
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=childAssetNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property childAssetNo with lazy=false
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:childAssetNo]
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for childAssetNo
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property childAssetNo
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=clientRecharge, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property clientRecharge with lazy=false
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:clientRecharge]
+2019-10-06 12:33:35.256 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for clientRecharge
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property clientRecharge
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=comments, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property comments with lazy=false
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:comments]
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for comments
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property comments
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=companyId, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property companyId with lazy=false
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:companyId]
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for companyId
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property companyId
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=currency, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property currency with lazy=false
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:currency]
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for currency
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property currency
+2019-10-06 12:33:35.257 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=departmentName, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property departmentName with lazy=false
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:departmentName]
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for departmentName
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property departmentName
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=depreciationEndDate, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property depreciationEndDate with lazy=false
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:depreciationEndDate]
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for depreciationEndDate
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property depreciationEndDate
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=depreciationStartDate, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property depreciationStartDate with lazy=false
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:depreciationStartDate]
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for depreciationStartDate
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property depreciationStartDate
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=depreciationStopFlag, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property depreciationStopFlag with lazy=false
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:depreciationStopFlag]
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for depreciationStopFlag
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property depreciationStopFlag
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=dutyTreatment, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property dutyTreatment with lazy=false
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:dutyTreatment]
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for dutyTreatment
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property dutyTreatment
+2019-10-06 12:33:35.258 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=glCodeAddition, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property glCodeAddition with lazy=false
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:glCodeAddition]
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for glCodeAddition
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property glCodeAddition
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=glCodeClearing, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property glCodeClearing with lazy=false
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:glCodeClearing]
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for glCodeClearing
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property glCodeClearing
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=imageAsset, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property imageAsset with lazy=false
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:imageAsset]
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for imageAsset
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property imageAsset
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=impairmentValue, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property impairmentValue with lazy=false
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:impairmentValue]
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for impairmentValue
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property impairmentValue
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=installationCertificate, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property installationCertificate with lazy=false
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:installationCertificate]
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for installationCertificate
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property installationCertificate
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=lastDepreciationRun, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property lastDepreciationRun with lazy=false
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:lastDepreciationRun]
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for lastDepreciationRun
+2019-10-06 12:33:35.259 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property lastDepreciationRun
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=leasedReserve, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property leasedReserve with lazy=false
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:leasedReserve]
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for leasedReserve
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property leasedReserve
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=leasedValue, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property leasedValue with lazy=false
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:leasedValue]
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for leasedValue
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property leasedValue
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=legacyAssetNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property legacyAssetNo with lazy=false
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:legacyAssetNo]
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for legacyAssetNo
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property legacyAssetNo
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=legacyDocNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property legacyDocNo with lazy=false
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:legacyDocNo]
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for legacyDocNo
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property legacyDocNo
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=lifeInMonth, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property lifeInMonth with lazy=false
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:lifeInMonth]
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for lifeInMonth
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property lifeInMonth
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=lifeRemaining, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property lifeRemaining with lazy=false
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:lifeRemaining]
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for lifeRemaining
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property lifeRemaining
+2019-10-06 12:33:35.260 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=loanAmount, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property loanAmount with lazy=false
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:loanAmount]
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for loanAmount
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property loanAmount
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=macroLoc, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property macroLoc with lazy=false
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:macroLoc]
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for macroLoc
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property macroLoc
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=manufacturer, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property manufacturer with lazy=false
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:manufacturer]
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for manufacturer
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property manufacturer
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=method, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property method with lazy=false
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:method]
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for method
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property method
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=microLoc, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property microLoc with lazy=false
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:microLoc]
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for microLoc
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property microLoc
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=model, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property model with lazy=false
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:model]
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for model
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property model
+2019-10-06 12:33:35.261 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=originalCost, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property originalCost with lazy=false
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:originalCost]
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for originalCost
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property originalCost
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=ownerType, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property ownerType with lazy=false
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:ownerType]
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for ownerType
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property ownerType
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=parentAssetDesc, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property parentAssetDesc with lazy=false
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:parentAssetDesc]
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for parentAssetDesc
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property parentAssetDesc
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=parentAssetNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property parentAssetNo with lazy=false
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:parentAssetNo]
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for parentAssetNo
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property parentAssetNo
+2019-10-06 12:33:35.262 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=physicalAvailable, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property physicalAvailable with lazy=false
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:physicalAvailable]
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for physicalAvailable
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property physicalAvailable
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=physicalReconcilationNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property physicalReconcilationNo with lazy=false
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:physicalReconcilationNo]
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for physicalReconcilationNo
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property physicalReconcilationNo
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=postKey, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property postKey with lazy=false
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:postKey]
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for postKey
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property postKey
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=printedStickerFlag, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property printedStickerFlag with lazy=false
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:printedStickerFlag]
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for printedStickerFlag
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property printedStickerFlag
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=processingStage, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property processingStage with lazy=false
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:processingStage]
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for processingStage
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property processingStage
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=retirementObligation, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property retirementObligation with lazy=false
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:retirementObligation]
+2019-10-06 12:33:35.263 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for retirementObligation
+2019-10-06 12:33:35.264 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property retirementObligation
+2019-10-06 12:33:35.264 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=revaluationKey, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.264 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property revaluationKey with lazy=false
+2019-10-06 12:33:35.264 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:revaluationKey]
+2019-10-06 12:33:35.264 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for revaluationKey
+2019-10-06 12:33:35.265 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property revaluationKey
+2019-10-06 12:33:35.265 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=revaluationValue, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property revaluationValue with lazy=false
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:revaluationValue]
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for revaluationValue
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property revaluationValue
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=revisedCost, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property revisedCost with lazy=false
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:revisedCost]
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for revisedCost
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property revisedCost
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=salvagePercentage, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.266 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property salvagePercentage with lazy=false
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:salvagePercentage]
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for salvagePercentage
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property salvagePercentage
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=salvageValue, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property salvageValue with lazy=false
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:salvageValue]
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for salvageValue
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property salvageValue
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=serialNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property serialNo with lazy=false
+2019-10-06 12:33:35.267 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:serialNo]
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for serialNo
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property serialNo
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=serialNoAccessories, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property serialNoAccessories with lazy=false
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:serialNoAccessories]
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for serialNoAccessories
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property serialNoAccessories
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=sourcOfFund, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property sourcOfFund with lazy=false
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:sourcOfFund]
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for sourcOfFund
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property sourcOfFund
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=subHead, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property subHead with lazy=false
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:subHead]
+2019-10-06 12:33:35.268 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for subHead
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property subHead
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=tagNo, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property tagNo with lazy=false
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:tagNo]
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for tagNo
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property tagNo
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=tagNoAccessories, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property tagNoAccessories with lazy=false
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:tagNoAccessories]
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for tagNoAccessories
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property tagNoAccessories
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=verificationDate, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property verificationDate with lazy=false
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:verificationDate]
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for verificationDate
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property verificationDate
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=verifiedBy, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property verifiedBy with lazy=false
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:verifiedBy]
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for verifiedBy
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property verifiedBy
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=warrantyExpiryDate, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property warrantyExpiryDate with lazy=false
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:warrantyExpiryDate]
+2019-10-06 12:33:35.269 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for warrantyExpiryDate
+2019-10-06 12:33:35.270 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property warrantyExpiryDate
+2019-10-06 12:33:35.270 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=warrantyNumber, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.270 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property warrantyNumber with lazy=false
+2019-10-06 12:33:35.270 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:warrantyNumber]
+2019-10-06 12:33:35.270 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for warrantyNumber
+2019-10-06 12:33:35.270 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property warrantyNumber
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=workingCondition, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property workingCondition with lazy=false
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:workingCondition]
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for workingCondition
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property workingCondition
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(AssetsEntity), mappingColumn=writeOff, insertable=true, updatable=true, unique=false}
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property writeOff with lazy=false
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.afs.fams.entity.AssetsEntity:writeOff]
+2019-10-06 12:33:35.273 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for writeOff
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property writeOff
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for alloflag
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for status
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for category
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for status
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for amortisationStartDate
+2019-10-06 12:33:35.274 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for assetCurrrentStage
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for assetReadyToUse
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for barCodeImage
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for billOfEntryDate
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for billOfEntryNo
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for branchId
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for broadHead
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for category
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for childAssetDesc
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for childAssetNo
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for clientRecharge
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for comments
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for companyId
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for currency
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for departmentName
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for depreciationEndDate
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for depreciationStartDate
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for depreciationStopFlag
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for dutyTreatment
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for glCodeAddition
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for glCodeClearing
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for imageAsset
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for impairmentValue
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for installationCertificate
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for lastDepreciationRun
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for leasedReserve
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for leasedValue
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for legacyAssetNo
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for legacyDocNo
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for lifeInMonth
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for lifeRemaining
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for loanAmount
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for macroLoc
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for manufacturer
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for method
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for microLoc
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for model
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for originalCost
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for ownerType
+2019-10-06 12:33:35.275 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for parentAssetDesc
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for parentAssetNo
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for physicalAvailable
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for physicalReconcilationNo
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for postKey
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for printedStickerFlag
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for processingStage
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for retirementObligation
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for revaluationKey
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for revaluationValue
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for revisedCost
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for salvagePercentage
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for salvageValue
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for serialNo
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for serialNoAccessories
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for sourcOfFund
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for subHead
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for tagNo
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for tagNoAccessories
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for verificationDate
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for verifiedBy
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for warrantyExpiryDate
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for warrantyNumber
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for workingCondition
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for writeOff
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [allocationflagentity]
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [assetcategoryentity]
+2019-10-06 12:33:35.276 DEBUG 8220 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [assetsentity]
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : SessionFactory name : null
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): enabled
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Statistics: disabled
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Default entity-mode: pojo
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Default batch fetch size: -1
+2019-10-06 12:33:35.278 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: 2
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Default null ordering: NONE
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Query language substitutions: {}
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Named query checking : enabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache factory: null
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache region prefix: null
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch size: 15
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Scrollable result sets: enabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Wrap result sets: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC result set fetch size: null
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - query : 
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - closed-handling : 
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - lists : 
+2019-10-06 12:33:35.279 DEBUG 8220 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - transactions : 
+2019-10-06 12:33:35.280 DEBUG 8220 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2019-10-06 12:33:35.281 DEBUG 8220 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@65050f40, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Users\AFS\Downloads\fixed-assets-management (1)\fixed-assets-management\target\classes;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.1.8.RELEASE\spring-boot-starter-web-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.8.RELEASE\spring-boot-starter-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.8.RELEASE\spring-boot-starter-logging-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\AFS\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\AFS\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\Users\AFS\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\AFS\.m2\repository\org\slf4j\jul-to-slf4j\1.7.28\jul-to-slf4j-1.7.28.jar;C:\Users\AFS\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.1.8.RELEASE\spring-boot-starter-json-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.9\jackson-datatype-jdk8-2.9.9.jar;C:\Users\AFS\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.9\jackson-datatype-jsr310-2.9.9.jar;C:\Users\AFS\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.9\jackson-module-parameter-names-2.9.9.jar;C:\Users\AFS\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.17.Final\hibernate-validator-6.0.17.Final.jar;C:\Users\AFS\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\AFS\.m2\repository\org\jboss\logging\jboss-logging\3.3.3.Final\jboss-logging-3.3.3.Final.jar;C:\Users\AFS\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-web\5.1.9.RELEASE\spring-web-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-beans\5.1.9.RELEASE\spring-beans-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-webmvc\5.1.9.RELEASE\spring-webmvc-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-aop\5.1.9.RELEASE\spring-aop-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-context\5.1.9.RELEASE\spring-context-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-expression\5.1.9.RELEASE\spring-expression-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-data-rest\2.1.8.RELEASE\spring-boot-starter-data-rest-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\data\spring-data-rest-webmvc\3.1.10.RELEASE\spring-data-rest-webmvc-3.1.10.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\data\spring-data-rest-core\3.1.10.RELEASE\spring-data-rest-core-3.1.10.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\hateoas\spring-hateoas\0.25.2.RELEASE\spring-hateoas-0.25.2.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\AFS\.m2\repository\org\atteo\evo-inflector\1.2.2\evo-inflector-1.2.2.jar;C:\Users\AFS\.m2\repository\org\slf4j\slf4j-api\1.7.28\slf4j-api-1.7.28.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.8.RELEASE\spring-boot-starter-data-jpa-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.8.RELEASE\spring-boot-starter-aop-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\aspectj\aspectjweaver\1.9.4\aspectjweaver-1.9.4.jar;C:\Users\AFS\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;C:\Users\AFS\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\AFS\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\AFS\.m2\repository\org\hibernate\hibernate-core\5.3.11.Final\hibernate-core-5.3.11.Final.jar;C:\Users\AFS\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\AFS\.m2\repository\org\javassist\javassist\3.23.2-GA\javassist-3.23.2-GA.jar;C:\Users\AFS\.m2\repository\net\bytebuddy\byte-buddy\1.9.16\byte-buddy-1.9.16.jar;C:\Users\AFS\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\AFS\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\AFS\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\AFS\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\AFS\.m2\repository\org\springframework\data\spring-data-jpa\2.1.10.RELEASE\spring-data-jpa-2.1.10.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\data\spring-data-commons\2.1.10.RELEASE\spring-data-commons-2.1.10.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-orm\5.1.9.RELEASE\spring-orm-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-tx\5.1.9.RELEASE\spring-tx-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-aspects\5.1.9.RELEASE\spring-aspects-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.8.RELEASE\spring-boot-starter-jdbc-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-jdbc\5.1.9.RELEASE\spring-jdbc-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\mysql\mysql-connector-java\8.0.17\mysql-connector-java-8.0.17.jar;C:\Users\AFS\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.3\jackson-databind-2.9.9.3.jar;C:\Users\AFS\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\AFS\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\AFS\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.8.RELEASE\spring-boot-starter-tomcat-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\AFS\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.24\tomcat-embed-core-9.0.24.jar;C:\Users\AFS\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.24\tomcat-embed-el-9.0.24.jar;C:\Users\AFS\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.24\tomcat-embed-websocket-9.0.24.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-devtools\2.1.8.RELEASE\spring-boot-devtools-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot\2.1.8.RELEASE\spring-boot-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.8.RELEASE\spring-boot-autoconfigure-2.1.8.RELEASE.jar;C:\Users\AFS\.m2\repository\org\modelmapper\modelmapper\2.3.5\modelmapper-2.3.5.jar;C:\Users\AFS\.m2\repository\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-core\5.1.9.RELEASE\spring-core-5.1.9.RELEASE.jar;C:\Users\AFS\.m2\repository\org\springframework\spring-jcl\5.1.9.RELEASE\spring-jcl-5.1.9.RELEASE.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Calcutta, os.name=Windows 10, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_211\bin, sun.java.command=com.afs.fams.FixedAssetsManagementApplication, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@11e584f6, javax.persistence.sharedCache.mode=UNSPECIFIED, sun.cpu.endian=little, user.home=C:\Users\AFS, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jre1.8.0_211, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_211-b12, user.name=AFS, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_211\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\AFS\AppData\Local\Temp\, com.zaxxer.hikari.pool_number=1, catalina.home=C:\Users\AFS\AppData\Local\Temp\tomcat.3030009896149801920.7072, java.version=1.8.0_211, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl, user.dir=C:\Users\AFS\Downloads\fixed-assets-management (1)\fixed-assets-management, os.arch=amd64, PID=8220, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, catalina.base=C:\Users\AFS\AppData\Local\Temp\tomcat.3030009896149801920.7072, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@f42e93, java.library.path=C:\Program Files\Java\jre1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_211\bin;D:\apache-maven-3.6.2\bin;C:\Users\AFS\AppData\Roaming\npm;C:\Users\AFS\Desktop;;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.211-b12, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=HikariDataSource (HikariPool-6), sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jre1.8.0_211\lib\ext;C:\Windows\Sun\Java\lib\ext, java.class.version=52.0}
+2019-10-06 12:33:35.282 DEBUG 8220 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-06 12:33:35.282 DEBUG 8220 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-06 12:33:35.283 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-06 12:33:35.283 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-06 12:33:35.283 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-06 12:33:35.283 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-06 12:33:35.290 DEBUG 8220 --- [restartedMain] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-06 12:33:35.290 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-06 12:33:35.290 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-06 12:33:35.290 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-06 12:33:35.290 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-06 12:33:35.290 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-06 12:33:35.291 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AllocationFlagEntity] is safe
+2019-10-06 12:33:35.291 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AllocationFlagEntity
+2019-10-06 12:33:35.292 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AssetCategoryEntity] is safe
+2019-10-06 12:33:35.292 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AssetCategoryEntity
+2019-10-06 12:33:35.293 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AssetsEntity] is safe
+2019-10-06 12:33:35.293 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AssetsEntity
+2019-10-06 12:33:35.297 DEBUG 8220 --- [restartedMain] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2019-10-06 12:33:35.298 DEBUG 8220 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2019-10-06 12:33:35.298 DEBUG 8220 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@280a830c] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@739fce44]
+2019-10-06 12:33:35.298 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AllocationFlagEntity] is safe
+2019-10-06 12:33:35.298 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AllocationFlagEntity
+2019-10-06 12:33:35.298 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AllocationFlagEntity] is safe
+2019-10-06 12:33:35.298 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AllocationFlagEntity
+2019-10-06 12:33:35.303 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AssetCategoryEntity] is safe
+2019-10-06 12:33:35.303 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AssetCategoryEntity
+2019-10-06 12:33:35.303 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AssetCategoryEntity] is safe
+2019-10-06 12:33:35.303 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AssetCategoryEntity
+2019-10-06 12:33:35.306 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AssetsEntity] is safe
+2019-10-06 12:33:35.306 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AssetsEntity
+2019-10-06 12:33:35.306 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.afs.fams.entity.AssetsEntity] is safe
+2019-10-06 12:33:35.306 DEBUG 8220 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.afs.fams.entity.AssetsEntity
+2019-10-06 12:33:35.323 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.afs.fams.entity.AllocationFlagEntity
+2019-10-06 12:33:35.323 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from AllocationFlagEntity where id =?
+2019-10-06 12:33:35.323 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select allocation_.id, allocation_.alloflag as alloflag2_0_, allocation_.status as status3_0_ from AllocationFlagEntity allocation_ where allocation_.id=?
+2019-10-06 12:33:35.323 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into AllocationFlagEntity (alloflag, status, id) values (?, ?, ?)
+2019-10-06 12:33:35.323 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update AllocationFlagEntity set alloflag=?, status=? where id=?
+2019-10-06 12:33:35.323 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from AllocationFlagEntity where id=?
+2019-10-06 12:33:35.323 DEBUG 8220 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b6cd547]
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : alloflag
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : status
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.afs.fams.entity.AllocationFlagEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.afs.fams.entity.AllocationFlagEntity, querySpaceUid=<gen:0>, path=com.afs.fams.entity.AllocationFlagEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.afs.fams.entity.AllocationFlagEntity)
+          - SQL table alias mapping - allocation0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.afs.fams.entity.AllocationFlagEntity [NONE]: select allocation0_.id as id1_0_0_, allocation0_.alloflag as alloflag2_0_0_, allocation0_.status as status3_0_0_ from AllocationFlagEntity allocation0_ where allocation0_.id=?
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@312195c8]
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : alloflag
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : status
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.afs.fams.entity.AllocationFlagEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.afs.fams.entity.AllocationFlagEntity, querySpaceUid=<gen:0>, path=com.afs.fams.entity.AllocationFlagEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.afs.fams.entity.AllocationFlagEntity)
+          - SQL table alias mapping - allocation0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-10-06 12:33:35.324 DEBUG 8220 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.afs.fams.entity.AllocationFlagEntity [READ]: select allocation0_.id as id1_0_0_, allocation0_.alloflag as alloflag2_0_0_, allocation0_.status as status3_0_0_ from AllocationFlagEntity allocation0_ where allocation0_.id=?
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.afs.fams.entity.AllocationFlagEntity: select allocation0_.id as id1_0_0_, allocation0_.alloflag as alloflag2_0_0_, allocation0_.status as status3_0_0_ from AllocationFlagEntity allocation0_ where allocation0_.id=?
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.afs.fams.entity.AllocationFlagEntity: select allocation0_.id as id1_0_0_, allocation0_.alloflag as alloflag2_0_0_, allocation0_.status as status3_0_0_ from AllocationFlagEntity allocation0_ where allocation0_.id=?
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.afs.fams.entity.AssetCategoryEntity
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from AssetCategoryEntity where id =?
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select assetcateg_.id, assetcateg_.category as category2_1_, assetcateg_.status as status3_1_ from AssetCategoryEntity assetcateg_ where assetcateg_.id=?
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into AssetCategoryEntity (category, status, id) values (?, ?, ?)
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update AssetCategoryEntity set category=?, status=? where id=?
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from AssetCategoryEntity where id=?
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4b6694f]
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : category
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : status
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-06 12:33:35.325 DEBUG 8220 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.afs.fams.entity.AssetCategoryEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.afs.fams.entity.AssetCategoryEntity, querySpaceUid=<gen:0>, path=com.afs.fams.entity.AssetCategoryEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.afs.fams.entity.AssetCategoryEntity)
+          - SQL table alias mapping - assetcateg0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.afs.fams.entity.AssetCategoryEntity [NONE]: select assetcateg0_.id as id1_1_0_, assetcateg0_.category as category2_1_0_, assetcateg0_.status as status3_1_0_ from AssetCategoryEntity assetcateg0_ where assetcateg0_.id=?
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6bdb3cf0]
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : category
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : status
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.afs.fams.entity.AssetCategoryEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.afs.fams.entity.AssetCategoryEntity, querySpaceUid=<gen:0>, path=com.afs.fams.entity.AssetCategoryEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.afs.fams.entity.AssetCategoryEntity)
+          - SQL table alias mapping - assetcateg0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.afs.fams.entity.AssetCategoryEntity [READ]: select assetcateg0_.id as id1_1_0_, assetcateg0_.category as category2_1_0_, assetcateg0_.status as status3_1_0_ from AssetCategoryEntity assetcateg0_ where assetcateg0_.id=?
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.afs.fams.entity.AssetCategoryEntity: select assetcateg0_.id as id1_1_0_, assetcateg0_.category as category2_1_0_, assetcateg0_.status as status3_1_0_ from AssetCategoryEntity assetcateg0_ where assetcateg0_.id=?
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.afs.fams.entity.AssetCategoryEntity: select assetcateg0_.id as id1_1_0_, assetcateg0_.category as category2_1_0_, assetcateg0_.status as status3_1_0_ from AssetCategoryEntity assetcateg0_ where assetcateg0_.id=?
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.afs.fams.entity.AssetsEntity
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from AssetsEntity where id =?
+2019-10-06 12:33:35.326 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select assetsenti_.id, assetsenti_.amortisationStartDate as amortisa2_2_, assetsenti_.assetCurrrentStage as assetCur3_2_, assetsenti_.assetReadyToUse as assetRea4_2_, assetsenti_.barCodeImage as barCodeI5_2_, assetsenti_.billOfEntryDate as billOfEn6_2_, assetsenti_.billOfEntryNo as billOfEn7_2_, assetsenti_.branchId as branchId8_2_, assetsenti_.broadHead as broadHea9_2_, assetsenti_.category as categor10_2_, assetsenti_.childAssetDesc as childAs11_2_, assetsenti_.childAssetNo as childAs12_2_, assetsenti_.clientRecharge as clientR13_2_, assetsenti_.comments as comment14_2_, assetsenti_.companyId as company15_2_, assetsenti_.currency as currenc16_2_, assetsenti_.departmentName as departm17_2_, assetsenti_.depreciationEndDate as depreci18_2_, assetsenti_.depreciationStartDate as depreci19_2_, assetsenti_.depreciationStopFlag as depreci20_2_, assetsenti_.dutyTreatment as dutyTre21_2_, assetsenti_.glCodeAddition as glCodeA22_2_, assetsenti_.glCodeClearing as glCodeC23_2_, assetsenti_.imageAsset as imageAs24_2_, assetsenti_.impairmentValue as impairm25_2_, assetsenti_.installationCertificate as install26_2_, assetsenti_.lastDepreciationRun as lastDep27_2_, assetsenti_.leasedReserve as leasedR28_2_, assetsenti_.leasedValue as leasedV29_2_, assetsenti_.legacyAssetNo as legacyA30_2_, assetsenti_.legacyDocNo as legacyD31_2_, assetsenti_.lifeInMonth as lifeInM32_2_, assetsenti_.lifeRemaining as lifeRem33_2_, assetsenti_.loanAmount as loanAmo34_2_, assetsenti_.macroLoc as macroLo35_2_, assetsenti_.manufacturer as manufac36_2_, assetsenti_.method as method37_2_, assetsenti_.microLoc as microLo38_2_, assetsenti_.model as model39_2_, assetsenti_.originalCost as origina40_2_, assetsenti_.ownerType as ownerTy41_2_, assetsenti_.parentAssetDesc as parentA42_2_, assetsenti_.parentAssetNo as parentA43_2_, assetsenti_.physicalAvailable as physica44_2_, assetsenti_.physicalReconcilationNo as physica45_2_, assetsenti_.postKey as postKey46_2_, assetsenti_.printedStickerFlag as printed47_2_, assetsenti_.processingStage as process48_2_, assetsenti_.retirementObligation as retirem49_2_, assetsenti_.revaluationKey as revalua50_2_, assetsenti_.revaluationValue as revalua51_2_, assetsenti_.revisedCost as revised52_2_, assetsenti_.salvagePercentage as salvage53_2_, assetsenti_.salvageValue as salvage54_2_, assetsenti_.serialNo as serialN55_2_, assetsenti_.serialNoAccessories as serialN56_2_, assetsenti_.sourcOfFund as sourcOf57_2_, assetsenti_.subHead as subHead58_2_, assetsenti_.tagNo as tagNo59_2_, assetsenti_.tagNoAccessories as tagNoAc60_2_, assetsenti_.verificationDate as verific61_2_, assetsenti_.verifiedBy as verifie62_2_, assetsenti_.warrantyExpiryDate as warrant63_2_, assetsenti_.warrantyNumber as warrant64_2_, assetsenti_.workingCondition as working65_2_, assetsenti_.writeOff as writeOf66_2_ from AssetsEntity assetsenti_ where assetsenti_.id=?
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into AssetsEntity (amortisationStartDate, assetCurrrentStage, assetReadyToUse, barCodeImage, billOfEntryDate, billOfEntryNo, branchId, broadHead, category, childAssetDesc, childAssetNo, clientRecharge, comments, companyId, currency, departmentName, depreciationEndDate, depreciationStartDate, depreciationStopFlag, dutyTreatment, glCodeAddition, glCodeClearing, imageAsset, impairmentValue, installationCertificate, lastDepreciationRun, leasedReserve, leasedValue, legacyAssetNo, legacyDocNo, lifeInMonth, lifeRemaining, loanAmount, macroLoc, manufacturer, method, microLoc, model, originalCost, ownerType, parentAssetDesc, parentAssetNo, physicalAvailable, physicalReconcilationNo, postKey, printedStickerFlag, processingStage, retirementObligation, revaluationKey, revaluationValue, revisedCost, salvagePercentage, salvageValue, serialNo, serialNoAccessories, sourcOfFund, subHead, tagNo, tagNoAccessories, verificationDate, verifiedBy, warrantyExpiryDate, warrantyNumber, workingCondition, writeOff, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update AssetsEntity set amortisationStartDate=?, assetCurrrentStage=?, assetReadyToUse=?, barCodeImage=?, billOfEntryDate=?, billOfEntryNo=?, branchId=?, broadHead=?, category=?, childAssetDesc=?, childAssetNo=?, clientRecharge=?, comments=?, companyId=?, currency=?, departmentName=?, depreciationEndDate=?, depreciationStartDate=?, depreciationStopFlag=?, dutyTreatment=?, glCodeAddition=?, glCodeClearing=?, imageAsset=?, impairmentValue=?, installationCertificate=?, lastDepreciationRun=?, leasedReserve=?, leasedValue=?, legacyAssetNo=?, legacyDocNo=?, lifeInMonth=?, lifeRemaining=?, loanAmount=?, macroLoc=?, manufacturer=?, method=?, microLoc=?, model=?, originalCost=?, ownerType=?, parentAssetDesc=?, parentAssetNo=?, physicalAvailable=?, physicalReconcilationNo=?, postKey=?, printedStickerFlag=?, processingStage=?, retirementObligation=?, revaluationKey=?, revaluationValue=?, revisedCost=?, salvagePercentage=?, salvageValue=?, serialNo=?, serialNoAccessories=?, sourcOfFund=?, subHead=?, tagNo=?, tagNoAccessories=?, verificationDate=?, verifiedBy=?, warrantyExpiryDate=?, warrantyNumber=?, workingCondition=?, writeOff=? where id=?
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from AssetsEntity where id=?
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f407d5d]
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : amortisationStartDate
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : assetCurrrentStage
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : assetReadyToUse
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : barCodeImage
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : billOfEntryDate
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : billOfEntryNo
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : branchId
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : broadHead
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : category
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : childAssetDesc
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : childAssetNo
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : clientRecharge
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : comments
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : companyId
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : currency
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : departmentName
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : depreciationEndDate
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : depreciationStartDate
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : depreciationStopFlag
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : dutyTreatment
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : glCodeAddition
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : glCodeClearing
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : imageAsset
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : impairmentValue
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : installationCertificate
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastDepreciationRun
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : leasedReserve
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : leasedValue
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : legacyAssetNo
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : legacyDocNo
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lifeInMonth
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lifeRemaining
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : loanAmount
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : macroLoc
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : manufacturer
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : method
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : microLoc
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : model
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : originalCost
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ownerType
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : parentAssetDesc
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : parentAssetNo
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : physicalAvailable
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : physicalReconcilationNo
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : postKey
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : printedStickerFlag
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : processingStage
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : retirementObligation
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : revaluationKey
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : revaluationValue
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : revisedCost
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : salvagePercentage
+2019-10-06 12:33:35.327 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : salvageValue
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : serialNo
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : serialNoAccessories
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : sourcOfFund
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : subHead
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : tagNo
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : tagNoAccessories
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : verificationDate
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : verifiedBy
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : warrantyExpiryDate
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : warrantyNumber
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : workingCondition
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : writeOff
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.afs.fams.entity.AssetsEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.afs.fams.entity.AssetsEntity, querySpaceUid=<gen:0>, path=com.afs.fams.entity.AssetsEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.afs.fams.entity.AssetsEntity)
+          - SQL table alias mapping - assetsenti0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.afs.fams.entity.AssetsEntity [NONE]: select assetsenti0_.id as id1_2_0_, assetsenti0_.amortisationStartDate as amortisa2_2_0_, assetsenti0_.assetCurrrentStage as assetCur3_2_0_, assetsenti0_.assetReadyToUse as assetRea4_2_0_, assetsenti0_.barCodeImage as barCodeI5_2_0_, assetsenti0_.billOfEntryDate as billOfEn6_2_0_, assetsenti0_.billOfEntryNo as billOfEn7_2_0_, assetsenti0_.branchId as branchId8_2_0_, assetsenti0_.broadHead as broadHea9_2_0_, assetsenti0_.category as categor10_2_0_, assetsenti0_.childAssetDesc as childAs11_2_0_, assetsenti0_.childAssetNo as childAs12_2_0_, assetsenti0_.clientRecharge as clientR13_2_0_, assetsenti0_.comments as comment14_2_0_, assetsenti0_.companyId as company15_2_0_, assetsenti0_.currency as currenc16_2_0_, assetsenti0_.departmentName as departm17_2_0_, assetsenti0_.depreciationEndDate as depreci18_2_0_, assetsenti0_.depreciationStartDate as depreci19_2_0_, assetsenti0_.depreciationStopFlag as depreci20_2_0_, assetsenti0_.dutyTreatment as dutyTre21_2_0_, assetsenti0_.glCodeAddition as glCodeA22_2_0_, assetsenti0_.glCodeClearing as glCodeC23_2_0_, assetsenti0_.imageAsset as imageAs24_2_0_, assetsenti0_.impairmentValue as impairm25_2_0_, assetsenti0_.installationCertificate as install26_2_0_, assetsenti0_.lastDepreciationRun as lastDep27_2_0_, assetsenti0_.leasedReserve as leasedR28_2_0_, assetsenti0_.leasedValue as leasedV29_2_0_, assetsenti0_.legacyAssetNo as legacyA30_2_0_, assetsenti0_.legacyDocNo as legacyD31_2_0_, assetsenti0_.lifeInMonth as lifeInM32_2_0_, assetsenti0_.lifeRemaining as lifeRem33_2_0_, assetsenti0_.loanAmount as loanAmo34_2_0_, assetsenti0_.macroLoc as macroLo35_2_0_, assetsenti0_.manufacturer as manufac36_2_0_, assetsenti0_.method as method37_2_0_, assetsenti0_.microLoc as microLo38_2_0_, assetsenti0_.model as model39_2_0_, assetsenti0_.originalCost as origina40_2_0_, assetsenti0_.ownerType as ownerTy41_2_0_, assetsenti0_.parentAssetDesc as parentA42_2_0_, assetsenti0_.parentAssetNo as parentA43_2_0_, assetsenti0_.physicalAvailable as physica44_2_0_, assetsenti0_.physicalReconcilationNo as physica45_2_0_, assetsenti0_.postKey as postKey46_2_0_, assetsenti0_.printedStickerFlag as printed47_2_0_, assetsenti0_.processingStage as process48_2_0_, assetsenti0_.retirementObligation as retirem49_2_0_, assetsenti0_.revaluationKey as revalua50_2_0_, assetsenti0_.revaluationValue as revalua51_2_0_, assetsenti0_.revisedCost as revised52_2_0_, assetsenti0_.salvagePercentage as salvage53_2_0_, assetsenti0_.salvageValue as salvage54_2_0_, assetsenti0_.serialNo as serialN55_2_0_, assetsenti0_.serialNoAccessories as serialN56_2_0_, assetsenti0_.sourcOfFund as sourcOf57_2_0_, assetsenti0_.subHead as subHead58_2_0_, assetsenti0_.tagNo as tagNo59_2_0_, assetsenti0_.tagNoAccessories as tagNoAc60_2_0_, assetsenti0_.verificationDate as verific61_2_0_, assetsenti0_.verifiedBy as verifie62_2_0_, assetsenti0_.warrantyExpiryDate as warrant63_2_0_, assetsenti0_.warrantyNumber as warrant64_2_0_, assetsenti0_.workingCondition as working65_2_0_, assetsenti0_.writeOff as writeOf66_2_0_ from AssetsEntity assetsenti0_ where assetsenti0_.id=?
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@40db9a7f]
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : amortisationStartDate
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : assetCurrrentStage
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : assetReadyToUse
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : barCodeImage
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : billOfEntryDate
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : billOfEntryNo
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : branchId
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : broadHead
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : category
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : childAssetDesc
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : childAssetNo
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : clientRecharge
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : comments
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : companyId
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : currency
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : departmentName
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : depreciationEndDate
+2019-10-06 12:33:35.328 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : depreciationStartDate
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : depreciationStopFlag
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : dutyTreatment
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : glCodeAddition
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : glCodeClearing
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : imageAsset
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : impairmentValue
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : installationCertificate
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lastDepreciationRun
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : leasedReserve
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : leasedValue
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : legacyAssetNo
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : legacyDocNo
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lifeInMonth
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : lifeRemaining
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : loanAmount
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : macroLoc
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : manufacturer
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : method
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : microLoc
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : model
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : originalCost
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ownerType
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : parentAssetDesc
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : parentAssetNo
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : physicalAvailable
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : physicalReconcilationNo
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : postKey
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : printedStickerFlag
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : processingStage
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : retirementObligation
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : revaluationKey
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : revaluationValue
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : revisedCost
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : salvagePercentage
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : salvageValue
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : serialNo
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : serialNoAccessories
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : sourcOfFund
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : subHead
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : tagNo
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : tagNoAccessories
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : verificationDate
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : verifiedBy
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : warrantyExpiryDate
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : warrantyNumber
+2019-10-06 12:33:35.329 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : workingCondition
+2019-10-06 12:33:35.330 DEBUG 8220 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : writeOff
+2019-10-06 12:33:35.330 DEBUG 8220 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-06 12:33:35.330 DEBUG 8220 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-06 12:33:35.330 DEBUG 8220 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.afs.fams.entity.AssetsEntity)
+    - Returns
+       - EntityReturnImpl(entity=com.afs.fams.entity.AssetsEntity, querySpaceUid=<gen:0>, path=com.afs.fams.entity.AssetsEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.afs.fams.entity.AssetsEntity)
+          - SQL table alias mapping - assetsenti0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2019-10-06 12:33:35.330 DEBUG 8220 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.afs.fams.entity.AssetsEntity [READ]: select assetsenti0_.id as id1_2_0_, assetsenti0_.amortisationStartDate as amortisa2_2_0_, assetsenti0_.assetCurrrentStage as assetCur3_2_0_, assetsenti0_.assetReadyToUse as assetRea4_2_0_, assetsenti0_.barCodeImage as barCodeI5_2_0_, assetsenti0_.billOfEntryDate as billOfEn6_2_0_, assetsenti0_.billOfEntryNo as billOfEn7_2_0_, assetsenti0_.branchId as branchId8_2_0_, assetsenti0_.broadHead as broadHea9_2_0_, assetsenti0_.category as categor10_2_0_, assetsenti0_.childAssetDesc as childAs11_2_0_, assetsenti0_.childAssetNo as childAs12_2_0_, assetsenti0_.clientRecharge as clientR13_2_0_, assetsenti0_.comments as comment14_2_0_, assetsenti0_.companyId as company15_2_0_, assetsenti0_.currency as currenc16_2_0_, assetsenti0_.departmentName as departm17_2_0_, assetsenti0_.depreciationEndDate as depreci18_2_0_, assetsenti0_.depreciationStartDate as depreci19_2_0_, assetsenti0_.depreciationStopFlag as depreci20_2_0_, assetsenti0_.dutyTreatment as dutyTre21_2_0_, assetsenti0_.glCodeAddition as glCodeA22_2_0_, assetsenti0_.glCodeClearing as glCodeC23_2_0_, assetsenti0_.imageAsset as imageAs24_2_0_, assetsenti0_.impairmentValue as impairm25_2_0_, assetsenti0_.installationCertificate as install26_2_0_, assetsenti0_.lastDepreciationRun as lastDep27_2_0_, assetsenti0_.leasedReserve as leasedR28_2_0_, assetsenti0_.leasedValue as leasedV29_2_0_, assetsenti0_.legacyAssetNo as legacyA30_2_0_, assetsenti0_.legacyDocNo as legacyD31_2_0_, assetsenti0_.lifeInMonth as lifeInM32_2_0_, assetsenti0_.lifeRemaining as lifeRem33_2_0_, assetsenti0_.loanAmount as loanAmo34_2_0_, assetsenti0_.macroLoc as macroLo35_2_0_, assetsenti0_.manufacturer as manufac36_2_0_, assetsenti0_.method as method37_2_0_, assetsenti0_.microLoc as microLo38_2_0_, assetsenti0_.model as model39_2_0_, assetsenti0_.originalCost as origina40_2_0_, assetsenti0_.ownerType as ownerTy41_2_0_, assetsenti0_.parentAssetDesc as parentA42_2_0_, assetsenti0_.parentAssetNo as parentA43_2_0_, assetsenti0_.physicalAvailable as physica44_2_0_, assetsenti0_.physicalReconcilationNo as physica45_2_0_, assetsenti0_.postKey as postKey46_2_0_, assetsenti0_.printedStickerFlag as printed47_2_0_, assetsenti0_.processingStage as process48_2_0_, assetsenti0_.retirementObligation as retirem49_2_0_, assetsenti0_.revaluationKey as revalua50_2_0_, assetsenti0_.revaluationValue as revalua51_2_0_, assetsenti0_.revisedCost as revised52_2_0_, assetsenti0_.salvagePercentage as salvage53_2_0_, assetsenti0_.salvageValue as salvage54_2_0_, assetsenti0_.serialNo as serialN55_2_0_, assetsenti0_.serialNoAccessories as serialN56_2_0_, assetsenti0_.sourcOfFund as sourcOf57_2_0_, assetsenti0_.subHead as subHead58_2_0_, assetsenti0_.tagNo as tagNo59_2_0_, assetsenti0_.tagNoAccessories as tagNoAc60_2_0_, assetsenti0_.verificationDate as verific61_2_0_, assetsenti0_.verifiedBy as verifie62_2_0_, assetsenti0_.warrantyExpiryDate as warrant63_2_0_, assetsenti0_.warrantyNumber as warrant64_2_0_, assetsenti0_.workingCondition as working65_2_0_, assetsenti0_.writeOff as writeOf66_2_0_ from AssetsEntity assetsenti0_ where assetsenti0_.id=?
+2019-10-06 12:33:35.331 DEBUG 8220 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.afs.fams.entity.AssetsEntity: select assetsenti0_.id as id1_2_0_, assetsenti0_.amortisationStartDate as amortisa2_2_0_, assetsenti0_.assetCurrrentStage as assetCur3_2_0_, assetsenti0_.assetReadyToUse as assetRea4_2_0_, assetsenti0_.barCodeImage as barCodeI5_2_0_, assetsenti0_.billOfEntryDate as billOfEn6_2_0_, assetsenti0_.billOfEntryNo as billOfEn7_2_0_, assetsenti0_.branchId as branchId8_2_0_, assetsenti0_.broadHead as broadHea9_2_0_, assetsenti0_.category as categor10_2_0_, assetsenti0_.childAssetDesc as childAs11_2_0_, assetsenti0_.childAssetNo as childAs12_2_0_, assetsenti0_.clientRecharge as clientR13_2_0_, assetsenti0_.comments as comment14_2_0_, assetsenti0_.companyId as company15_2_0_, assetsenti0_.currency as currenc16_2_0_, assetsenti0_.departmentName as departm17_2_0_, assetsenti0_.depreciationEndDate as depreci18_2_0_, assetsenti0_.depreciationStartDate as depreci19_2_0_, assetsenti0_.depreciationStopFlag as depreci20_2_0_, assetsenti0_.dutyTreatment as dutyTre21_2_0_, assetsenti0_.glCodeAddition as glCodeA22_2_0_, assetsenti0_.glCodeClearing as glCodeC23_2_0_, assetsenti0_.imageAsset as imageAs24_2_0_, assetsenti0_.impairmentValue as impairm25_2_0_, assetsenti0_.installationCertificate as install26_2_0_, assetsenti0_.lastDepreciationRun as lastDep27_2_0_, assetsenti0_.leasedReserve as leasedR28_2_0_, assetsenti0_.leasedValue as leasedV29_2_0_, assetsenti0_.legacyAssetNo as legacyA30_2_0_, assetsenti0_.legacyDocNo as legacyD31_2_0_, assetsenti0_.lifeInMonth as lifeInM32_2_0_, assetsenti0_.lifeRemaining as lifeRem33_2_0_, assetsenti0_.loanAmount as loanAmo34_2_0_, assetsenti0_.macroLoc as macroLo35_2_0_, assetsenti0_.manufacturer as manufac36_2_0_, assetsenti0_.method as method37_2_0_, assetsenti0_.microLoc as microLo38_2_0_, assetsenti0_.model as model39_2_0_, assetsenti0_.originalCost as origina40_2_0_, assetsenti0_.ownerType as ownerTy41_2_0_, assetsenti0_.parentAssetDesc as parentA42_2_0_, assetsenti0_.parentAssetNo as parentA43_2_0_, assetsenti0_.physicalAvailable as physica44_2_0_, assetsenti0_.physicalReconcilationNo as physica45_2_0_, assetsenti0_.postKey as postKey46_2_0_, assetsenti0_.printedStickerFlag as printed47_2_0_, assetsenti0_.processingStage as process48_2_0_, assetsenti0_.retirementObligation as retirem49_2_0_, assetsenti0_.revaluationKey as revalua50_2_0_, assetsenti0_.revaluationValue as revalua51_2_0_, assetsenti0_.revisedCost as revised52_2_0_, assetsenti0_.salvagePercentage as salvage53_2_0_, assetsenti0_.salvageValue as salvage54_2_0_, assetsenti0_.serialNo as serialN55_2_0_, assetsenti0_.serialNoAccessories as serialN56_2_0_, assetsenti0_.sourcOfFund as sourcOf57_2_0_, assetsenti0_.subHead as subHead58_2_0_, assetsenti0_.tagNo as tagNo59_2_0_, assetsenti0_.tagNoAccessories as tagNoAc60_2_0_, assetsenti0_.verificationDate as verific61_2_0_, assetsenti0_.verifiedBy as verifie62_2_0_, assetsenti0_.warrantyExpiryDate as warrant63_2_0_, assetsenti0_.warrantyNumber as warrant64_2_0_, assetsenti0_.workingCondition as working65_2_0_, assetsenti0_.writeOff as writeOf66_2_0_ from AssetsEntity assetsenti0_ where assetsenti0_.id=?
+2019-10-06 12:33:35.331 DEBUG 8220 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.afs.fams.entity.AssetsEntity: select assetsenti0_.id as id1_2_0_, assetsenti0_.amortisationStartDate as amortisa2_2_0_, assetsenti0_.assetCurrrentStage as assetCur3_2_0_, assetsenti0_.assetReadyToUse as assetRea4_2_0_, assetsenti0_.barCodeImage as barCodeI5_2_0_, assetsenti0_.billOfEntryDate as billOfEn6_2_0_, assetsenti0_.billOfEntryNo as billOfEn7_2_0_, assetsenti0_.branchId as branchId8_2_0_, assetsenti0_.broadHead as broadHea9_2_0_, assetsenti0_.category as categor10_2_0_, assetsenti0_.childAssetDesc as childAs11_2_0_, assetsenti0_.childAssetNo as childAs12_2_0_, assetsenti0_.clientRecharge as clientR13_2_0_, assetsenti0_.comments as comment14_2_0_, assetsenti0_.companyId as company15_2_0_, assetsenti0_.currency as currenc16_2_0_, assetsenti0_.departmentName as departm17_2_0_, assetsenti0_.depreciationEndDate as depreci18_2_0_, assetsenti0_.depreciationStartDate as depreci19_2_0_, assetsenti0_.depreciationStopFlag as depreci20_2_0_, assetsenti0_.dutyTreatment as dutyTre21_2_0_, assetsenti0_.glCodeAddition as glCodeA22_2_0_, assetsenti0_.glCodeClearing as glCodeC23_2_0_, assetsenti0_.imageAsset as imageAs24_2_0_, assetsenti0_.impairmentValue as impairm25_2_0_, assetsenti0_.installationCertificate as install26_2_0_, assetsenti0_.lastDepreciationRun as lastDep27_2_0_, assetsenti0_.leasedReserve as leasedR28_2_0_, assetsenti0_.leasedValue as leasedV29_2_0_, assetsenti0_.legacyAssetNo as legacyA30_2_0_, assetsenti0_.legacyDocNo as legacyD31_2_0_, assetsenti0_.lifeInMonth as lifeInM32_2_0_, assetsenti0_.lifeRemaining as lifeRem33_2_0_, assetsenti0_.loanAmount as loanAmo34_2_0_, assetsenti0_.macroLoc as macroLo35_2_0_, assetsenti0_.manufacturer as manufac36_2_0_, assetsenti0_.method as method37_2_0_, assetsenti0_.microLoc as microLo38_2_0_, assetsenti0_.model as model39_2_0_, assetsenti0_.originalCost as origina40_2_0_, assetsenti0_.ownerType as ownerTy41_2_0_, assetsenti0_.parentAssetDesc as parentA42_2_0_, assetsenti0_.parentAssetNo as parentA43_2_0_, assetsenti0_.physicalAvailable as physica44_2_0_, assetsenti0_.physicalReconcilationNo as physica45_2_0_, assetsenti0_.postKey as postKey46_2_0_, assetsenti0_.printedStickerFlag as printed47_2_0_, assetsenti0_.processingStage as process48_2_0_, assetsenti0_.retirementObligation as retirem49_2_0_, assetsenti0_.revaluationKey as revalua50_2_0_, assetsenti0_.revaluationValue as revalua51_2_0_, assetsenti0_.revisedCost as revised52_2_0_, assetsenti0_.salvagePercentage as salvage53_2_0_, assetsenti0_.salvageValue as salvage54_2_0_, assetsenti0_.serialNo as serialN55_2_0_, assetsenti0_.serialNoAccessories as serialN56_2_0_, assetsenti0_.sourcOfFund as sourcOf57_2_0_, assetsenti0_.subHead as subHead58_2_0_, assetsenti0_.tagNo as tagNo59_2_0_, assetsenti0_.tagNoAccessories as tagNoAc60_2_0_, assetsenti0_.verificationDate as verific61_2_0_, assetsenti0_.verifiedBy as verifie62_2_0_, assetsenti0_.warrantyExpiryDate as warrant63_2_0_, assetsenti0_.warrantyNumber as warrant64_2_0_, assetsenti0_.workingCondition as working65_2_0_, assetsenti0_.writeOff as writeOf66_2_0_ from AssetsEntity assetsenti0_ where assetsenti0_.id=?
+2019-10-06 12:33:35.342 DEBUG 8220 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : AllocationFlagEntity
+2019-10-06 12:33:35.342 DEBUG 8220 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : AssetCategoryEntity
+2019-10-06 12:33:35.344 DEBUG 8220 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : AssetsEntity
+2019-10-06 12:33:35.344 DEBUG 8220 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : hibernate_sequence
+2019-10-06 12:33:35.344 DEBUG 8220 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named HQL queries
+2019-10-06 12:33:35.344 DEBUG 8220 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named SQL queries
+2019-10-06 12:33:35.344 DEBUG 8220 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 07df5898-e64d-41bb-b350-b448867636d0 (<unnamed>)
+2019-10-06 12:33:35.344 DEBUG 8220 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2019-10-06 12:33:35.386 DEBUG 8220 --- [restartedMain] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2019-10-06 12:33:35.490 DEBUG 8220 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-06 12:33:35.490 DEBUG 8220 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-06 12:33:35.490 DEBUG 8220 --- [restartedMain] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-06 12:33:35.491 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-06 12:33:35.492 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-06 12:33:35.492 DEBUG 8220 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-06 12:33:35.494 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-06 12:33:35.494 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-06 12:33:35.494 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-06 12:33:35.494 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-06 12:33:35.494 DEBUG 8220 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-06 12:33:35.528  WARN 8220 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-06 12:34:00.238 DEBUG 8220 --- [Thread-34] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
+2019-10-06 12:34:00.240 DEBUG 8220 --- [Thread-34] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@4f8804a1] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@739fce44]
+2019-10-06 12:34:00.240 DEBUG 8220 --- [Thread-34] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2019-10-06 12:34:00.240 DEBUG 8220 --- [Thread-34] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
